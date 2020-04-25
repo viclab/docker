@@ -1,0 +1,13 @@
+# dockerfile for cppdev
+FROM ubuntu:18.04
+MAINTAINER victorschen@tencent.com
+RUN apt-get update \
+&& apt-get install -y build-essential cmake  \
+&& apt-get install -y vim wget inetutils-ping net-tools
+WORKDIR /root
+
+# ADD xxx.tgz
+# VOLUME xxx
+# EXPOSE 80
+# CMD xxx
+
